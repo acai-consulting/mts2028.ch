@@ -1,5 +1,5 @@
-baseURL = "/"
+baseURL = "https://mts2028.ch/"
 languageCode = "en-us"
-title = "Infinity | Comming Soon Hugo Template By Themefisher"
+title = "Manta Treffen Siblingen 2028"
 theme = "infinity-hugo"
 removePathAccents = true

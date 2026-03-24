@@ -1,0 +1,30 @@
+{{ if .Site.Params.map.enable }}
+    {{"<!-- Map Section -->" | safeHTML}}
+    <section id="{{ i18n "contact" | urlize }}-map" class="section map-section">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="heading text-center wow fadeInUp" style="padding: 40px 0 20px;">
+                        {{ with .Site.Params.map.title }}
+                        <h2>{{ . }}</h2>
+                        {{ end }}
+                        {{ with .Site.Params.map.subtitle }}
+                        <p>{{ . }}</p>
+                        {{ end }}
+                    </div>
+                    <div class="wow fadeInUp">
+                        <iframe
+                            src="{{ .Site.Params.map.embedURL }}"
+                            width="100%"
+                            height="{{ .Site.Params.map.height | default "450" }}"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}
