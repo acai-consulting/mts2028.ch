@@ -1,4 +1,4 @@
-baseURL = "https://mts2028.ch/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Manta Treffen Siblingen 2028"
 theme = "infinity-hugo"
