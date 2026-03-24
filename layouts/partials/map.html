@@ -23,6 +23,13 @@
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
+                    {{ with .Site.Params.map.directionsURL }}
+                    <div class="text-center wow fadeInUp" style="padding: 20px 0 30px;">
+                        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-home">
+                            <i class="fa fa-map-marker"></i>&nbsp; {{ $.Site.Params.map.directionsText | default "Route planen" }}
+                        </a>
+                    </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
